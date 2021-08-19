@@ -1,0 +1,14 @@
+[Unit]
+Description=Shellhttpd Minimal Web Server
+DefaultDependencies=no
+After=systemd-udev-settle.service
+Before=sysinit.target shutdown.target
+Conflicts=shutdown.target
+Description=Start up Shellhttpd Application
+
+[Service]
+ExecStart=/bin/sh /usr/share/shellhttpd/httpd.sh
+RemainAfterExit=true 
+
+[Install]
+WantedBy=sysinit.target
