@@ -1,2 +1,4 @@
-# extra-meta-subscriber-overrides
-Linux microPlatform Sample Recipes
+# Foundries.io 'Extra' Platform Recipes
+
+## Overview
+A collection of OpenEmbedded/Yocto Project recipes.
